@@ -15,9 +15,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('guest.home');
-});
 
 Auth::routes();
 
@@ -31,5 +28,8 @@ Route::prefix('admin')
         Route::resource('/category', 'CategoryController');
         Route::put('/post/{id}/clearCategory', 'PostController@removeCategoryFromPost')->name('removeCategoryFromPost');
     });
-// Route::get('/home', 'HomeController@index')->name('home');
-// Route::resource('admin/post', 'admin\PostController');
+
+// INSERIAMO ALL'ULTIMO LA ROTTA DEL FRONT-OFFICE IN MODO DA NON COMPROMETTERE LE ROTTE GIA' INSERITE
+Route::get("{any?}", function () {
+    return view('guest.home');
+})->where("any", ".*");

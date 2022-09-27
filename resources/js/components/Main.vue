@@ -1,31 +1,41 @@
 <template>
   <div>
-      aaaabbfytf
+      AAAAA
+      <postCard v-for="post in posts" :key="post.id" :post="post"/>
   </div>
 </template>
 
 <script>
 // IMPORTIAMO AXIOS
 import axios from 'axios'
+import postCard from './MainComponents/PostCard.vue'
 
 export default {
 name : 'app',
-
+components: {
+        postCard
+    },
 data : function(){
         return{
-            postContent : [],
+            posts : [],
         }
     },
 
 methods: {
         getPost : function(){
-            console.log('POOYYOYOYOYO');
+            axios.get('api/post')
+            .then((elemet)=> {
+                this.posts = elemet.data.resoult ;
+            })
+            .catch((error) => {
+                console.log(error);
+            })
         },
     },
  created(){
        this.getPost();
     }
-    
+
 }
 </script>
 

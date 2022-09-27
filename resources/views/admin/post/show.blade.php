@@ -35,12 +35,12 @@
         </div>
         <div class="card-footer d-flex justify-content-center">
             <div class="mx-3">
-                <a class="btn btn-success" href="#">
+                <a class="btn btn-success" href="{{ route('admin.post.edit', $post->id) }}">
                     Edit
                 </a>
             </div>
             <div class="mx-3">
-                <form action="#" class="delete-method" method="POST">
+                <form action="{{ route('admin.post.destroy', $post->id) }}" class="delete-method" method="POST">
                     @csrf
                     @method('DELETE')
 

@@ -2034,9 +2034,15 @@ var staticRenderFns = [function () {
   }, [_c("div", [_c("a", {
     staticClass: "navbar-brand"
   }, [_vm._v("BOOLPRES")])]), _vm._v(" "), _c("div", [_c("a", {
-    staticClass: "btn btn-outline-success"
+    staticClass: "btn btn-outline-success",
+    attrs: {
+      href: "/login"
+    }
   }, [_vm._v("LOGIN")]), _vm._v(" "), _c("a", {
-    staticClass: "btn btn-outline-primary"
+    staticClass: "btn btn-outline-primary",
+    attrs: {
+      href: "/register"
+    }
   }, [_vm._v("REGISTERED")])])])])]);
 }];
 render._withStripped = true;

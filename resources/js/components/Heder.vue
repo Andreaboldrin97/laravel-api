@@ -6,8 +6,8 @@
              <a class="navbar-brand">BOOLPRES</a>
         </div>
        <div>
-            <a class="btn btn-outline-success">LOGIN</a>
-            <a class="btn btn-outline-primary">REGISTERED</a>
+            <a class="btn btn-outline-success" href="/login">LOGIN</a>
+            <a class="btn btn-outline-primary" href="/register">REGISTERED</a>
        </div>
     </div>
 </nav>

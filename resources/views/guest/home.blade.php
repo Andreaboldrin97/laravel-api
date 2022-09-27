@@ -19,7 +19,7 @@
 
 <body>
     <div id="root">
-        POYOOOOOO
+
     </div>
 </body>
 

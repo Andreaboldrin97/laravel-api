@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-      AAAAA
       <div class="row">
               <postCard v-for="post in posts" :key="post.id" :post="post"/>
       </div>

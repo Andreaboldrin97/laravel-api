@@ -2114,7 +2114,9 @@ var render = function render() {
     }
   })]), _vm._v(" "), _c("div", {
     staticClass: "card-body"
-  }, [_c("h4", [_vm._v("\n              " + _vm._s(_vm.post.title) + "\n          ")]), _vm._v(" "), _c("h5", [_vm._v("\n              " + _vm._s(_vm.post.user.name) + "\n          ")]), _vm._v(" "), _c("p", {
+  }, [_c("h4", [_vm._v("\n              " + _vm._s(_vm.post.title) + "\n          ")]), _vm._v(" "), _c("h5", [_vm._v("\n              " + _vm._s(_vm.post.user.name) + "\n          ")]), _vm._v(" "), _c("div", {
+    staticClass: "category-text"
+  }, [_vm._v("\n              " + _vm._s(_vm.post.category.name) + "\n          ")]), _vm._v(" "), _c("p", {
     staticClass: "card-text"
   }, [_vm._v("\n              " + _vm._s(_vm.post.description) + "\n          ")])])])]);
 };
@@ -2182,7 +2184,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.card{\n    height: 100%;\n}\n.card-img{\n    height: 300px;\n}\nimg{\n    -o-object-fit: cover;\n       object-fit: cover;\n}\n", ""]);
+exports.push([module.i, "\n.card{\n    height: 100%;\n}\n.card-img{\n    height: 300px;\n}\nimg{\n    -o-object-fit: cover;\n       object-fit: cover;\n}\n\n", ""]);
 
 // exports
 

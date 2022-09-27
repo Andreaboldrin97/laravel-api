@@ -11,6 +11,9 @@
             <h5>
                 {{ post.user.name }}
             </h5>
+            <div class="category-text">
+                {{ post.category.name }}
+            </div>
             <p class="card-text">
                 {{ post.description }}
             </p>
@@ -46,4 +49,5 @@ export default {
 img{
     object-fit: cover;
 }
+
 </style>

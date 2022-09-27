@@ -1,7 +1,17 @@
 <template>
   <div>
-      <div class="card" >
-        <img :src="isValidUrl(post.image_url) ? post.image_url : 'storage/' + post.image_url " class="card-img-top" alt="image-post"> 
+      <div class="card">
+        <div class="w-50">
+            <img  :src="isValidUrl(post.image_url) ? post.image_url : 'storage/' + post.image_url " class="card-img-top" alt="image-post"> 
+        </div>
+        <div>
+            <h4>
+                {{ post.title }}
+            </h4>
+            <h5>
+                {{ post.user.name }}
+            </h5>
+        </div>
         <div class="card-body">
             <p class="card-text">
                 {{ post.description }}

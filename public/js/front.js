@@ -2035,13 +2035,15 @@ var render = function render() {
 
   return _c("div", [_c("div", {
     staticClass: "card"
+  }, [_c("div", {
+    staticClass: "w-50"
   }, [_c("img", {
     staticClass: "card-img-top",
     attrs: {
       src: _vm.isValidUrl(_vm.post.image_url) ? _vm.post.image_url : "storage/" + _vm.post.image_url,
       alt: "image-post"
     }
-  }), _vm._v(" "), _c("div", {
+  })]), _vm._v(" "), _c("div", [_c("h4", [_vm._v("\n              " + _vm._s(_vm.post.title) + "\n          ")]), _vm._v(" "), _c("h5", [_vm._v("\n              " + _vm._s(_vm.post.user.name) + "\n          ")])]), _vm._v(" "), _c("div", {
     staticClass: "card-body"
   }, [_c("p", {
     staticClass: "card-text"

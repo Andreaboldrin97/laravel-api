@@ -1,14 +1,19 @@
 <template>
 <div>
-    aaaaaaa
+    <MainComponent/>
 </div>
-  
 </template>
 
 <script>
+
+import MainComponent from '../components/Main.vue'
+
 export default {
-    name : 'App',
-    components: {}
+    
+    components: {
+        MainComponent
+    },
+    
 }
 </script>
 

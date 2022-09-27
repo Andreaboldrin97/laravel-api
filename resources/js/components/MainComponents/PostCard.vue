@@ -1,18 +1,16 @@
 <template>
-  <div>
-      <div class="card">
-        <div class="w-50">
+  <div class="my-4 col-6 ">
+      <div class="card m-3">
+        <div class="card-img d-flex justify-content-center">
             <img  :src="isValidUrl(post.image_url) ? post.image_url : 'storage/' + post.image_url " class="card-img-top" alt="image-post"> 
         </div>
-        <div>
+        <div class="card-body">
             <h4>
                 {{ post.title }}
             </h4>
             <h5>
                 {{ post.user.name }}
             </h5>
-        </div>
-        <div class="card-body">
             <p class="card-text">
                 {{ post.description }}
             </p>
@@ -39,5 +37,13 @@ export default {
 </script>
 
 <style>
-
+.card{
+    height: 100%;
+}
+.card-img{
+    height: 300px;
+}
+img{
+    object-fit: cover;
+}
 </style>

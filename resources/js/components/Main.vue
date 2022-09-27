@@ -1,7 +1,9 @@
 <template>
-  <div>
+  <div class="container">
       AAAAA
-      <postCard v-for="post in posts" :key="post.id" :post="post"/>
+      <div class="row">
+              <postCard v-for="post in posts" :key="post.id" :post="post"/>
+      </div>
   </div>
 </template>
 

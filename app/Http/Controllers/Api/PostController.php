@@ -15,7 +15,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        $post = Post::all();
+        $post = Post::with('user')->get();
         return response()->json([
             'response' => true,
             'count' => count($post),
@@ -52,7 +52,7 @@ class PostController extends Controller
      */
     public function show($id)
     {
-        $post = Post::findOrFail($id);
+        $post = Post::with('user')->findOrFail($id);
         return response()->json([
             'response' => true,
             'resoult' => $post

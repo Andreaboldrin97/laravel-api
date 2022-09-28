@@ -18,6 +18,11 @@
             <p class="card-text">
                 {{ post.description }}
             </p>
+            <div>
+                <span v-for="tag in post.tags" :key="tag.id">
+                    {{ tag.name }}
+                </span>
+            </div>
         </div>
     </div>
   </div>

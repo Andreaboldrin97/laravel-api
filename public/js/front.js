@@ -2118,7 +2118,11 @@ var render = function render() {
     staticClass: "category-text"
   }, [_vm.post.category_id == null ? _c("h5", [_vm._v(" NO CATEGORY ")]) : _c("h5", [_vm._v(_vm._s(_vm.post.category.name) + " ")])]), _vm._v(" "), _c("p", {
     staticClass: "card-text"
-  }, [_vm._v("\n              " + _vm._s(_vm.post.description) + "\n          ")])])])]);
+  }, [_vm._v("\n              " + _vm._s(_vm.post.description) + "\n          ")]), _vm._v(" "), _c("div", _vm._l(_vm.post.tags, function (tag) {
+    return _c("span", {
+      key: tag.id
+    }, [_vm._v("\n                  " + _vm._s(tag.name) + "\n              ")]);
+  }), 0)])])]);
 };
 
 var staticRenderFns = [];

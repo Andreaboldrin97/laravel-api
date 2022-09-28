@@ -2116,7 +2116,7 @@ var render = function render() {
     staticClass: "card-body"
   }, [_c("h4", [_vm._v("\n              " + _vm._s(_vm.post.title) + "\n          ")]), _vm._v(" "), _c("div", {
     staticClass: "category-text"
-  }, [_vm._v("\n              " + _vm._s(_vm.post.category.name) + "\n          ")]), _vm._v(" "), _c("p", {
+  }, [_vm.post.category_id == null ? _c("h5", [_vm._v(" NO CATEGORY ")]) : _c("h5", [_vm._v(_vm._s(_vm.post.category.name) + " ")])]), _vm._v(" "), _c("p", {
     staticClass: "card-text"
   }, [_vm._v("\n              " + _vm._s(_vm.post.description) + "\n          ")])])])]);
 };

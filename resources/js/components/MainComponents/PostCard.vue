@@ -12,7 +12,8 @@
                 {{ post.title }}
             </h4>
             <div class="category-text">
-                {{ post.category.name }}
+                <h5 v-if="post.category_id == null"> NO CATEGORY </h5>
+                <h5 v-else >{{ post.category.name }} </h5>
             </div>
             <p class="card-text">
                 {{ post.description }}

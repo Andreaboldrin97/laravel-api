@@ -2083,7 +2083,12 @@ var staticRenderFns = [function () {
     staticClass: "container-fluid"
   }, [_c("div", [_c("a", {
     staticClass: "navbar-brand"
-  }, [_vm._v("BOOLPRES")])]), _vm._v(" "), _c("div", [_c("a", {
+  }, [_vm._v("BOOLPRES")]), _vm._v(" "), _c("a", {
+    staticClass: "btn btn-outline-success",
+    attrs: {
+      href: "/"
+    }
+  }, [_vm._v("POST")])]), _vm._v(" "), _c("div", [_c("a", {
     staticClass: "btn btn-outline-success",
     attrs: {
       href: "/login"

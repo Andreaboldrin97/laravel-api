@@ -4,6 +4,7 @@
     <div class="container-fluid">
         <div>
              <a class="navbar-brand">BOOLPRES</a>
+             <a class="btn btn-outline-success" href="/">POST</a>
         </div>
        <div>
             <a class="btn btn-outline-success" href="/login">LOGIN</a>

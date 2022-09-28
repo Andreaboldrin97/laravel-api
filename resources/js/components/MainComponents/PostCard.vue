@@ -20,8 +20,10 @@
             </p>
         </div>
         <div class="card-footer">
-            <span v-for="tag in post.tags" :key="tag.id">
-                {{ tag.name }}
+            <span v-for="tag in post.tags" :key="tag.id ">
+                <a v-on:click="$emit('searchTagId' , tag.id)">
+                    {{ tag.name }}
+                </a>
             </span>
         </div>
     </div>
@@ -31,6 +33,12 @@
 <script>
 export default {
     props : ['post'],
+    data : function(){
+        return{
+            searchTagId : ''
+        }
+    },
+
     methods : {
         isValidUrl(str) {
             const regex = /(?:https?):\/\/(\w+:?\w*)?(\S+)(:\d+)?(\/|\/([\w#!:.?+=&%!\-\/]))?/;

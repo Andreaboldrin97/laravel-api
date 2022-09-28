@@ -11,18 +11,18 @@
             <h4>
                 {{ post.title }}
             </h4>
-            <div class="category-text">
-                <h5 v-if="post.category_id == null"> NO CATEGORY </h5>
-                <h5 v-else >{{ post.category.name }} </h5>
+            <div class=" badge badge-fill p-1" :style="post.category_id !== null ? 'background-color: ' + post.category.color : 'background-color: red' ">
+                <h5 class="m-0" v-if="post.category_id == null"> NO CATEGORY </h5>
+                <h5 class="m-0" v-else >{{ post.category.name }} </h5>
             </div>
             <p class="card-text">
                 {{ post.description }}
             </p>
-            <div>
-                <span v-for="tag in post.tags" :key="tag.id">
-                    {{ tag.name }}
-                </span>
-            </div>
+        </div>
+        <div class="card-footer">
+            <span v-for="tag in post.tags" :key="tag.id">
+                {{ tag.name }}
+            </span>
         </div>
     </div>
   </div>

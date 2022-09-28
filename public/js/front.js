@@ -2117,14 +2117,21 @@ var render = function render() {
   })]), _vm._v(" "), _c("div", {
     staticClass: "card-body"
   }, [_c("h4", [_vm._v("\n              " + _vm._s(_vm.post.title) + "\n          ")]), _vm._v(" "), _c("div", {
-    staticClass: "category-text"
-  }, [_vm.post.category_id == null ? _c("h5", [_vm._v(" NO CATEGORY ")]) : _c("h5", [_vm._v(_vm._s(_vm.post.category.name) + " ")])]), _vm._v(" "), _c("p", {
+    staticClass: "badge badge-fill p-1",
+    style: _vm.post.category_id !== null ? "background-color: " + _vm.post.category.color : "background-color: red"
+  }, [_vm.post.category_id == null ? _c("h5", {
+    staticClass: "m-0"
+  }, [_vm._v(" NO CATEGORY ")]) : _c("h5", {
+    staticClass: "m-0"
+  }, [_vm._v(_vm._s(_vm.post.category.name) + " ")])]), _vm._v(" "), _c("p", {
     staticClass: "card-text"
-  }, [_vm._v("\n              " + _vm._s(_vm.post.description) + "\n          ")]), _vm._v(" "), _c("div", _vm._l(_vm.post.tags, function (tag) {
+  }, [_vm._v("\n              " + _vm._s(_vm.post.description) + "\n          ")])]), _vm._v(" "), _c("div", {
+    staticClass: "card-footer"
+  }, _vm._l(_vm.post.tags, function (tag) {
     return _c("span", {
       key: tag.id
-    }, [_vm._v("\n                  " + _vm._s(tag.name) + "\n              ")]);
-  }), 0)])])]);
+    }, [_vm._v("\n              " + _vm._s(tag.name) + "\n          ")]);
+  }), 0)])]);
 };
 
 var staticRenderFns = [];

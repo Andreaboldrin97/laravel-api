@@ -2104,7 +2104,7 @@ var render = function render() {
     staticClass: "my-4 col-6"
   }, [_c("div", {
     staticClass: "card m-3"
-  }, [_c("div", {
+  }, [_c("h3", [_vm._v("\n              " + _vm._s(_vm.post.user.name) + "\n          ")]), _vm._v(" "), _c("div", {
     staticClass: "card-img d-flex justify-content-center"
   }, [_c("img", {
     staticClass: "card-img-top",
@@ -2114,7 +2114,7 @@ var render = function render() {
     }
   })]), _vm._v(" "), _c("div", {
     staticClass: "card-body"
-  }, [_c("h4", [_vm._v("\n              " + _vm._s(_vm.post.title) + "\n          ")]), _vm._v(" "), _c("h5", [_vm._v("\n              " + _vm._s(_vm.post.user.name) + "\n          ")]), _vm._v(" "), _c("div", {
+  }, [_c("h4", [_vm._v("\n              " + _vm._s(_vm.post.title) + "\n          ")]), _vm._v(" "), _c("div", {
     staticClass: "category-text"
   }, [_vm._v("\n              " + _vm._s(_vm.post.category.name) + "\n          ")]), _vm._v(" "), _c("p", {
     staticClass: "card-text"

@@ -1,6 +1,9 @@
 <template>
   <div class="my-4 col-6 ">
       <div class="card m-3">
+            <h3>
+                {{ post.user.name }}
+            </h3>
         <div class="card-img d-flex justify-content-center">
             <img  :src="isValidUrl(post.image_url) ? post.image_url : 'storage/' + post.image_url " class="card-img-top" alt="image-post"> 
         </div>
@@ -8,9 +11,6 @@
             <h4>
                 {{ post.title }}
             </h4>
-            <h5>
-                {{ post.user.name }}
-            </h5>
             <div class="category-text">
                 {{ post.category.name }}
             </div>

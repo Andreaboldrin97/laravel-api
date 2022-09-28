@@ -1,7 +1,7 @@
 <template>
   <div class="my-4 col-6 ">
       <div class="card m-3">
-            <h3>
+            <h3 class="mx-3">
                 {{ post.user.name }}
             </h3>
         <div class="card-img d-flex justify-content-center">
